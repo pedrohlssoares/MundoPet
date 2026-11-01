@@ -1,0 +1,130 @@
+/* Configurações Gerais */
+:root {
+    --pet-green: #2ecc71;
+    --pet-blue: #3498db;
+    --pet-dark: #2c3e50;
+    --pet-light: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--pet-light);
+    color: var(--pet-dark);
+}
+
+/* Navbar Estilizada */
+header.navbar {
+    background-color: white;
+    border-bottom: 3px solid var(--pet-green);
+}
+
+.navbar-brand {
+    color: var(--pet-green) !important;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--pet-dark) !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--pet-green) !important;
+}
+
+/* Botões Personalizados */
+.btn-primary {
+    background-color: var(--pet-green) !important;
+    border-color: var(--pet-green) !important;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+}
+
+.btn-outline-success {
+    border-color: var(--pet-blue) !important;
+    color: var(--pet-blue) !important;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--pet-blue) !important;
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+/* Ícone da Patinha animado (opcional) */
+.brand-icon {
+    font-size: 1.8rem;
+}
+
+/* Main Container */
+main {
+    min-height: 70vh;
+}
+
+/* Customização de Inputs */
+.custom-input {
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: var(--pet-green);
+    box-shadow: 0 0 0 0.25rem rgba(46, 204, 113, 0.25);
+}
+
+/* Customização da Tabela */
+.custom-thead {
+    background-color: var(--pet-dark);
+}
+
+.table thead th {
+    font-weight: 500;
+    border: none;
+    padding: 1rem;
+}
+
+.table tbody td {
+    padding: 1rem;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/* Botões de Ação na Tabela */
+.btn-outline-primary {
+    border-color: var(--pet-blue);
+    color: var(--pet-blue);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--pet-blue);
+    color: white;
+}
+
+/* Estilo para Alertas (Sessão) */
+.alert {
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+/* ===== Acréscimos do aplicativo cliente (SPA) ===== */
+body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
+.navbar-nav .nav-link:hover { color: #1abc9c !important; }
+.dashboard-card { border-radius: 15px; border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+.dashboard-btn { text-align: left; padding: 10px 18px; transition: all 0.2s ease-in-out; }
+.dashboard-btn:hover { transform: translateX(5px); }
+.stat-card { border-radius: 15px; border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+.stat-card .stat-value { font-size: 1.6rem; font-weight: 600; }
+.stat-card .stat-icon { font-size: 2rem; opacity: .85; }
+.table-responsive { border-radius: 12px; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+.auth-card { max-width: 440px; margin: 4rem auto; border-radius: 15px; border: none; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+.hero { background: linear-gradient(135deg, #2ecc71, #3498db); color: white; border-radius: 15px; }
+.badge-cache { font-size: .75rem; }

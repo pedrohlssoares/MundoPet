@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <!-- Se tiver apenas o .NET 8 ou 9 instalado: troque aqui o TargetFramework (net8.0/net9.0)
+         e o MsVersion (8.* / 9.*). Só precisa mudar neste arquivo. -->
+    <TargetFramework>net10.0</TargetFramework>
+    <MsVersion>10.*</MsVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+</Project>
