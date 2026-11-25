@@ -9,6 +9,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:10.0
 WORKDIR /app/api
 COPY --from=build /out .
 # O Program.cs procura o cliente em ../../client (relativo à pasta da API)
-COPY client /app/client
+COPY client /client
 EXPOSE 8080
 ENTRYPOINT ["dotnet", "MundoPet.Api.dll"]
